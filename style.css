@@ -1,0 +1,56 @@
+
+.list{
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: larger;    
+
+}
+li{
+
+}
+.header{
+    border: 2px solid black;
+}
+.main{
+    border: 2px solid black;
+
+}
+
+.one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+  .five {
+    grid-area: five;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      " one two three"
+      "four five five"
+  }
+  .main > div{
+         padding-top: 2%;
+        border: 1px solid gray;
+        text-align: center;
+  }
+  h1,h3{
+    font-family:cursive;
+    text-align: center;
+  }
